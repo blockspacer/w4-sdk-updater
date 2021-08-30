@@ -1,0 +1,155 @@
+#pragma once
+
+#include <array>
+#include <type_traits>
+
+#include "Variant.h"
+#include "W4Logger.h"
+
+#include "external/boost/preprocessor/punctuation/comma_if.hpp"
+#include "external/boost/preprocessor/seq/for_each_i.hpp"
+#include "external/boost/preprocessor/variadic/to_seq.hpp"
+#include "external/boost/preprocessor/facilities/empty.hpp"
+
+namespace w4::fsm
+{
+
+#include "impl/FSM_header.inl"
+
+
+
+template<typename EventType>
+class IFSM
+{
+public:
+    virtual ~IFSM() {}
+    virtual bool processEvent(const EventType& event, const variant::Variant& params = variant::NoneType()) = 0;
+    virtual void update(float dt) = 0;
+    virtual void reset() = 0;
+};
+
+template<typename EventType>
+struct FuncState
+{
+    void onEnter(IFSM<EventType>& fsm, const EventType& event, const w4::variant::Variant& params);
+    void onLeave(IFSM<EventType>& fsm, const EventType& event, const w4::variant::Variant& params);
+    void onUpdate(IFSM<EventType>& fsm, float dt);
+
+    std::function<void (IFSM<EventType>&, const EventType&, const w4::variant::Variant&)> onEnterFunc;
+    std::function<void (IFSM<EventType>&, const EventType&, const w4::variant::Variant&)> onLeaveFunc;
+    std::function<void (IFSM<EventType>&, float dt)> onUpdateFunc;
+};
+
+
+
+DECLARE_FSM_HANDLER_TRAIT(onEnter, const EventType&, const variant::Variant&)
+DECLARE_FSM_HANDLER_TRAIT(onLeave, const EventType&, const variant::Variant&)
+DECLARE_FSM_HANDLER_TRAIT(processEvent, const EventType&, const variant::Variant&)
+DECLARE_FSM_HANDLER_TRAIT(onUpdate, float)
+
+template<typename... Types>
+struct States : public Types...
+{
+    template<typename... Args>
+    States(Args... args);
+
+    FSM_VOID_HNDL(onEnter)
+    FSM_VOID_HNDL(onLeave)
+    FSM_BOOL_HNDL(processEvent)
+    FSM_VOID_HNDL(onUpdate)
+
+    template<typename Type>
+    static constexpr size_t getStateIdx();
+
+    static constexpr size_t nStates();
+
+    template<typename EventType, typename FSM>
+    void initCallbacks(FSM& fsm);
+
+private:
+
+    template<typename EventType, typename FSM, typename Type, size_t idx>
+    void initCallbacks_impl_Typed(FSM& fsm);
+
+    template<typename EventType, typename FSM, size_t... Is>
+    void initCallbacks_impl(FSM& fsm, Indices<Is...>);
+};
+
+template <typename T> struct PlainTypes {
+    static_assert(std::is_same_v<T, std::decay_t<T>>);
+    static_assert(!std::is_pointer_v<T>);
+    using type = T;
+};
+
+template<auto event, typename FromState, typename ToState>
+struct Transition
+{
+    template<typename States>
+    static void initTransitions(std::unordered_map<size_t , std::unordered_map<decltype(event), size_t>>& collection);
+    using type1 = FromState;
+    using type2 = ToState;
+    using eventType = decltype(event);
+};
+
+template<typename T1, typename... Transition>
+struct Transitions
+{
+    template <typename States, typename EventType>
+    static void initTransitions(std::unordered_map<size_t , std::unordered_map<EventType, size_t>>& collection);
+
+    using types = typename detail::set<PlainTypes, typename T1::type1, typename T1::type2, typename Transition::type1..., typename Transition::type2...>::unique;
+    using eventType = typename T1::eventType;
+};
+
+
+
+template<typename... FsmTransition>
+class FSM : public IFSM<typename fsm::Transitions<FsmTransition...>::eventType>
+{
+public:
+    using Transitions = fsm::Transitions<FsmTransition...>;
+    using States = typename detail::instantiate_with_set<fsm::States, typename Transitions::types>::type;
+    using EventType = typename fsm::Transitions<FsmTransition...>::eventType;
+
+    template<typename... Args>
+    FSM(Args... args);
+
+    bool processEvent(const EventType& event, const variant::Variant& params = variant::NoneType()) override;
+
+    void reset() override;
+
+    void update(float dt) override;
+    void onEnter(IFSM<EventType>& fsm, const EventType& event, const variant::Variant& params);
+    void onLeave(IFSM<EventType>& fsm, const EventType& event, const variant::Variant& params);
+    void onUpdate(IFSM<EventType>& fsm, float dt);
+
+    template<typename State>
+    void init(const EventType& event, const variant::Variant& params = variant::NoneType());
+
+    template <typename State>
+    State& state();
+
+private:
+    friend States;
+
+    States m_states;
+
+    std::unordered_map<size_t , std::unordered_map<EventType, size_t>> m_transitions;
+    size_t m_startState = 0;
+    size_t m_currentState = 0;
+    bool m_inited = false;
+
+    using CallbackPtr = void (States::*)(IFSM<EventType>&, const EventType& event, const variant::Variant& params);
+    using ProcessPtr = bool (States::*)(IFSM<EventType>&, const EventType& event, const variant::Variant& params);
+    using UpdatePtr = void (States::*)(IFSM<EventType>&, float dt);
+
+    std::array<CallbackPtr, States::nStates()> m_onEnterCallbacks;
+    std::array<CallbackPtr, States::nStates()> m_onLeaveCallbacks;
+    std::array<ProcessPtr, States::nStates()> m_ProcessSubEvent;
+    std::array<UpdatePtr, States::nStates()> m_UpdateEvent;
+};
+
+
+
+#include "impl/FSM_footer.inl"
+}

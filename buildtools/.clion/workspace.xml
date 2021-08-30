@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="w4-nyan-kit" targetName="gist-button" />
+      <config projectName="w4-nyan-kit" targetName="howto-tower" />
+      <config projectName="w4-nyan-kit" targetName="sample-hypercube" />
+      <config projectName="w4-nyan-kit" targetName="sample-shadows" />
+      <config projectName="w4-nyan-kit" targetName="gist-anim-texture" />
+      <config projectName="w4-nyan-kit" targetName="sample-water" />
+      <config projectName="w4-nyan-kit" targetName="sample-point-lights" />
+      <config projectName="w4-nyan-kit" targetName="sample-billiard" />
+      <config projectName="w4-nyan-kit" targetName="sample-reflect-hsl" />
+      <config projectName="w4-nyan-kit" targetName="gist-arcball" />
+      <config projectName="w4-nyan-kit" targetName="gist-javascript" />
+      <config projectName="w4-nyan-kit" targetName="sample-platformer" />
+      <config projectName="w4-nyan-kit" targetName="sample-preloaders" />
+      <config projectName="w4-nyan-kit" targetName="shipper" />
+      <config projectName="w4-nyan-kit" targetName="w4-Shipping" />
+      <config projectName="w4-nyan-kit" targetName="howto-gui" />
+      <config projectName="w4-nyan-kit" targetName="sample-pbr" />
+      <config projectName="w4-nyan-kit" targetName="sample-spine" />
+      <config projectName="w4-nyan-kit" targetName="sample-newton" />
+      <config projectName="w4-nyan-kit" targetName="sample-video" />
+      <config projectName="w4-nyan-kit" targetName="w4-Release" />
+      <config projectName="w4-nyan-kit" targetName="sample-colliding-obstacles" />
+      <config projectName="w4-nyan-kit" targetName="gist-skybox" />
+      <config projectName="w4-nyan-kit" targetName="tokamak" />
+      <config projectName="w4-nyan-kit" targetName="sample-shadertoy" />
+      <config projectName="w4-nyan-kit" targetName="sample-cubefall" />
+      <config projectName="w4-nyan-kit" targetName="gist-raycast" />
+      <config projectName="w4-nyan-kit" targetName="gist-background" />
+      <config projectName="w4-nyan-kit" targetName="W4AssetCreator" />
+      <config projectName="w4-nyan-kit" targetName="gist-audio" />
+      <config projectName="w4-nyan-kit" targetName="sample-tic-tac-toe" />
+      <config projectName="w4-nyan-kit" targetName="gist-load-asset" />
+      <config projectName="w4-nyan-kit" targetName="sample-maze" />
+      <config projectName="w4-nyan-kit" targetName="sample-walk" />
+      <config projectName="w4-nyan-kit" targetName="gist-timers" />
+      <config projectName="w4-nyan-kit" targetName="gist-particles" />
+      <config projectName="w4-nyan-kit" targetName="gist-fx" />
+      <config projectName="w4-nyan-kit" targetName="basic-app" />
+      <config projectName="w4-nyan-kit" targetName="sample-multi-htm" />
+      <config projectName="w4-nyan-kit" targetName="sample-ragdoll" />
+      <config projectName="w4-nyan-kit" targetName="sample-spot-lights" />
+      <config projectName="w4-nyan-kit" targetName="gist-minimal-app" />
+      <config projectName="w4-nyan-kit" targetName="gist-skinned-animation-blending" />
+      <config projectName="w4-nyan-kit" targetName="gist-slider" />
+      <config projectName="w4-nyan-kit" targetName="sample-darts" />
+      <config projectName="w4-nyan-kit" targetName="w4-Debug" />
+      <config projectName="w4-nyan-kit" targetName="gist-text" />
+      <config projectName="w4-nyan-kit" targetName="gist-label" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Win Release" ENABLED="true" GENERATION_DIR=".cmake/win-release" CONFIG_NAME="Release" GENERATION_OPTIONS="-GNinja" />
+      <configuration PROFILE_NAME="EMS Debug" ENABLED="true" GENERATION_DIR=".cmake/ems-debug" CONFIG_NAME="Debug" GENERATION_OPTIONS="-DW4_EMSCRIPTEN_BUILD=TRUE -GNinja" />
+      <configuration PROFILE_NAME="EMS Release" ENABLED="true" GENERATION_DIR=".cmake/ems-release" CONFIG_NAME="Release" GENERATION_OPTIONS="-DW4_EMSCRIPTEN_BUILD=TRUE -GNinja" />
+      <configuration PROFILE_NAME="EMS Shipping" ENABLED="true" GENERATION_DIR=".cmake/ems-shipping" CONFIG_NAME="Shipping" GENERATION_OPTIONS="-DW4_EMSCRIPTEN_BUILD=TRUE -GNinja" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="078adbeb-df55-4bca-a047-a59909f940be" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/shipper/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/shipper/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/shipper/js/shipping.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/shipper/sources/main.cpp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+    <option name="clangWarnings" value="-Wno-unused-variable,-Wno-infinite-recursion,-Werror=implicit-function-declaration,-Wshadow,-Wno-shadow-field-in-constructor-modified,-Wno-shadow-ivar,-Wuninitialized,-Wunused-label,-Wunused-lambda-capture, ,--target=aarch64 " />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:EMS Release" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1wXTC1yAlqC8WGDjWOkYdvjUM33" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/_out/Emscripten-Shipping/samples/sample-preloaders-index.html" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="cmake.loaded.for.project" value="true" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Develop\w4-nyan-kit\buildtools" />
+    </key>
+  </component>
+  <component name="RunManager" selected="CMake Application.shipper">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Build ALL" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" CONFIG_NAME="EMS Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Framework-Debug" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="w4-Debug" CONFIG_NAME="EMS Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Framework-Release" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="w4-Release" CONFIG_NAME="Win Release">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Framework-Shipping" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="w4-Shipping" CONFIG_NAME="EMS Shipping">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="W4AssetCreator" type="CMakeRunConfiguration" factoryName="Application" folderName="tools" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="W4AssetCreator" CONFIG_NAME="Win Release" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="W4AssetCreator">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="basic-app" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="basic-app" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="basic-app">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gist-anim-texture" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="gist-anim-texture" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="gist-anim-texture">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gist-arcball" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="gist-arcball" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="gist-arcball">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gist-audio" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="gist-audio" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="gist-audio">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gist-background" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="gist-background" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="gist-background">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gist-button" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="gist-button" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="gist-button">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gist-fx" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="gist-fx" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="gist-fx">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gist-javascript" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="gist-javascript" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="gist-javascript">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gist-label" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="gist-label" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="gist-label">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gist-load-asset" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="gist-load-asset" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="gist-load-asset">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gist-minimal-app" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="gist-minimal-app" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="gist-minimal-app">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gist-particles" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="gist-particles" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="gist-particles">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gist-raycast" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="gist-raycast" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="gist-raycast">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gist-skinned-animation-blending" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="gist-skinned-animation-blending" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="gist-skinned-animation-blending">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gist-skybox" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="gist-skybox" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="gist-skybox">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gist-slider" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="gist-slider" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="gist-slider">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gist-text" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="gist-text" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="gist-text">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gist-timers" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="gist-timers" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="gist-timers">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="howto-gui" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="howto-gui" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="howto-gui">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="howto-tower" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="howto-tower" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="howto-tower">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sample-billiard" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="sample-billiard" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="sample-billiard">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sample-colliding-obstacles" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="sample-colliding-obstacles" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="sample-colliding-obstacles">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sample-cubefall" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="sample-cubefall" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="sample-cubefall">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sample-darts" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="sample-darts" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="sample-darts">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sample-hypercube" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="sample-hypercube" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="sample-hypercube">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sample-maze" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="sample-maze" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="sample-maze">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sample-multi-htm" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="sample-multi-htm" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="sample-multi-htm">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sample-newton" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="sample-newton" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="sample-newton">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sample-pbr" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="sample-pbr" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="sample-pbr">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sample-platformer" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="sample-platformer" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="sample-platformer">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sample-point-lights" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="sample-point-lights" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="sample-point-lights">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sample-preloaders" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="sample-preloaders" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="sample-preloaders">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sample-ragdoll" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="sample-ragdoll" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="sample-ragdoll">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sample-reflect-hsl" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="sample-reflect-hsl" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="sample-reflect-hsl">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sample-shadertoy" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="sample-shadertoy" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="sample-shadertoy">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sample-shadows" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="sample-shadows" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="sample-shadows">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sample-spine" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="sample-spine" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="sample-spine">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sample-spot-lights" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="sample-spot-lights" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="sample-spot-lights">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sample-tic-tac-toe" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="sample-tic-tac-toe" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="sample-tic-tac-toe">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sample-video" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="sample-video" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="sample-video">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sample-walk" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="sample-walk" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="sample-walk">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sample-water" type="CMakeRunConfiguration" factoryName="Application" folderName="samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="sample-water" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="sample-water">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="shipper" type="CMakeRunConfiguration" factoryName="Application" folderName="tools" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w4-nyan-kit" TARGET_NAME="shipper" CONFIG_NAME="EMS Debug" RUN_TARGET_PROJECT_NAME="w4-nyan-kit" RUN_TARGET_NAME="shipper">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.basic-app" />
+      <item itemvalue="CMake Application.gist-anim-texture" />
+      <item itemvalue="CMake Application.gist-arcball" />
+      <item itemvalue="CMake Application.gist-audio" />
+      <item itemvalue="CMake Application.gist-background" />
+      <item itemvalue="CMake Application.gist-button" />
+      <item itemvalue="CMake Application.gist-fx" />
+      <item itemvalue="CMake Application.gist-javascript" />
+      <item itemvalue="CMake Application.gist-label" />
+      <item itemvalue="CMake Application.gist-load-asset" />
+      <item itemvalue="CMake Application.gist-minimal-app" />
+      <item itemvalue="CMake Application.gist-particles" />
+      <item itemvalue="CMake Application.gist-raycast" />
+      <item itemvalue="CMake Application.gist-skinned-animation-blending" />
+      <item itemvalue="CMake Application.gist-skybox" />
+      <item itemvalue="CMake Application.gist-slider" />
+      <item itemvalue="CMake Application.gist-text" />
+      <item itemvalue="CMake Application.gist-timers" />
+      <item itemvalue="CMake Application.howto-gui" />
+      <item itemvalue="CMake Application.howto-tower" />
+      <item itemvalue="CMake Application.sample-billiard" />
+      <item itemvalue="CMake Application.sample-colliding-obstacles" />
+      <item itemvalue="CMake Application.sample-cubefall" />
+      <item itemvalue="CMake Application.sample-darts" />
+      <item itemvalue="CMake Application.sample-hypercube" />
+      <item itemvalue="CMake Application.sample-maze" />
+      <item itemvalue="CMake Application.sample-multi-htm" />
+      <item itemvalue="CMake Application.sample-newton" />
+      <item itemvalue="CMake Application.sample-pbr" />
+      <item itemvalue="CMake Application.sample-platformer" />
+      <item itemvalue="CMake Application.sample-point-lights" />
+      <item itemvalue="CMake Application.sample-preloaders" />
+      <item itemvalue="CMake Application.sample-ragdoll" />
+      <item itemvalue="CMake Application.sample-reflect-hsl" />
+      <item itemvalue="CMake Application.sample-shadertoy" />
+      <item itemvalue="CMake Application.sample-shadows" />
+      <item itemvalue="CMake Application.sample-spine" />
+      <item itemvalue="CMake Application.sample-spot-lights" />
+      <item itemvalue="CMake Application.sample-tic-tac-toe" />
+      <item itemvalue="CMake Application.sample-video" />
+      <item itemvalue="CMake Application.sample-walk" />
+      <item itemvalue="CMake Application.sample-water" />
+      <item itemvalue="CMake Application.W4AssetCreator" />
+      <item itemvalue="CMake Application.shipper" />
+      <item itemvalue="CMake Application.Framework-Debug" />
+      <item itemvalue="CMake Application.Framework-Release" />
+      <item itemvalue="CMake Application.Framework-Shipping" />
+      <item itemvalue="CMake Application.Build ALL" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="078adbeb-df55-4bca-a047-a59909f940be" name="Changes" comment="" />
+      <created>1628603804191</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1628603804191</updated>
+      <workItem from="1628603806449" duration="5320000" />
+      <workItem from="1628672938528" duration="5682000" />
+      <workItem from="1628762397390" duration="14191000" />
+      <workItem from="1629107176897" duration="18270000" />
+      <workItem from="1629207978702" duration="1076000" />
+      <workItem from="1629449683046" duration="1056000" />
+      <workItem from="1629451474589" duration="1049000" />
+      <workItem from="1629452732676" duration="1947000" />
+      <workItem from="1629461316746" duration="1810000" />
+      <workItem from="1629464421227" duration="5725000" />
+      <workItem from="1629711879788" duration="2690000" />
+      <workItem from="1629721228412" duration="25917000" />
+      <workItem from="1629814877049" duration="38000" />
+      <workItem from="1629882402932" duration="4855000" />
+      <workItem from="1629896984692" duration="229000" />
+      <workItem from="1629968557871" duration="1193000" />
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
